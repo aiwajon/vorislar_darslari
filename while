@@ -1,0 +1,53 @@
+# print("""sizda qancha miqdorda pul bor?
+#       men sizning pulingizga mos mashina beraman""")
+# ism = input("ismingizni kiriting: ")
+# pul = int(input("pul miqdorini kiriting: "))
+
+# if pul <= 20:
+#     print(f"{ism.title()} sizga mos mashina: Matiz,Tico, Jiguli")
+# elif pul > 20 and pul <= 50:
+#     print(f"{ism.title()} sizga mos mashina: Nexia, Damas, Labo")
+
+"""
+Docstring for while sikl
+"""
+
+
+# har bir siklda boshiga raqam qo'yish kerak
+# son = 1
+# while son <= 10:
+#     print(f"{son}_sikl ; Kamolbek")
+#     son += 1
+
+
+
+
+
+
+# son = 1
+# while son <= 10:
+#     print(f"Kamolbekka yoqadigan sonlar: {son}")
+#     son += 1
+#     if son == 5:
+#         print("5 soni Kamolbekka yoqmaydi")
+#         break
+
+
+
+
+
+
+# print("5 ta eng yaqin do'stingizni kiriting: ")
+# ism = input("ismingiz nima? ")
+# son = 1
+
+# while son <= 5:
+#     savol = (f"{ism.title()} sizning eng yaqin do'stingiz kim? ")
+#     ism1 = input(savol)
+#     print(ism1)
+#     son += 1
+
+
+
+
+
