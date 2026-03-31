@@ -1,0 +1,65 @@
+# def kopaytma(a , b):
+#     print(f"{a} * {b} = {a*b}")
+# kopaytma(49 , 16)
+    
+
+
+
+
+
+# def o_arifmetik(a , b):
+#     javob = (a+b)/2
+#     return javob
+# print(o_arifmetik(4,6))
+# kopaytma = o_arifmetik(4,5) * 10
+# print(kopaytma)
+
+
+
+
+
+
+
+# def darajaga_oshirish(a,b,d):
+#  yigindi = (a**a  +  b**b + d**d)
+#  return yigindi 
+
+# bolinma = darajaga_oshirish(2,3,5)/1000
+# print(bolinma)                                                                                          
+
+
+
+
+
+
+# print("Davlat nomini kiriting")
+# def izoh_ber(izox):
+#     natija = f"{izox.title()} eng gozal davlat?"
+#     return natija
+# ism = input("ismingiz nima?: ")
+# print(f"{ism.title()} bilasizmi meni fikrim shunday? {izoh_ber('Malayziya')}")
+
+
+
+
+
+"""FunSimple7. Butun musbat sonining raqamlarini teskari tartibda chiqaruvchi InvertDigit nomli funksiya
+hosil qiling. Bu funksiya orqali a, b, c sonlarining raqamlari teskari tartibda chiqaruvchi programma
+tuzilsin.
+Funksiya prototipi quyidagicha bo'lishi mumkin:
+int InvertDigit (int );"""
+# def InvertDigit(a):
+#     a = str(a)
+#     a = a[::-1]
+#     return a
+# a = int(input("a sonini kiriting: "))
+# b = int(input("b sonini kiriting: "))
+# c = int(input("c sonini kiriting: "))
+# print(f"{a} sonining raqamlari teskari tartibda: {InvertDigit(a)}")
+# print(f"{b} sonining raqamlari teskari tartibda: {InvertDigit(b)}")
+# print(f"{c} sonining raqamlari teskari tartibda: {InvertDigit(c)}")
+
+
+
+
+""" """
