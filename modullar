@@ -1,0 +1,147 @@
+"""
+19.02.2026
+modullar va funksiyalar
+"""
+
+
+# def darajaga_oshirish(a,b):
+#     """a sonining b inchi darajasini hisoblash funksiyasi"""
+
+# def salomber(ism):
+#     """kiritilgan ismga qoshimcha matn yozib chiqaruvchi function"""
+
+# def ishorani_aniqlash(son):
+#     """Kiritilgan sonni musbat, manfiy yoki nolga teng ekanini aniqlovchi function"""
+
+# def mashina_taklif_qilish(narx):
+#     """Mijozning puliga qarab unga yetadigan moshinalar tavfsiya qilish function"""
+
+# def orta_arifmetik(*sonlar):
+#     """Istalgancha sonlarni qabul qilib, ularning o'rta arifmetigini qaytaruvchi function"""
+
+# def orta_geometrik(*sonlar):
+#     """Istalgancha sonlarni qabul qilib, ularning o'rta geometrikini qaytaruvchi function"""
+
+
+
+
+
+
+""" 1 """
+
+# def darajaga_oshirish(a,b):
+#     """istalgan a sonning b inchi darajasini hisoblash funksiyasi"""
+
+#     print(f"{a} ning {b} inchi darajasi: {a ** b}")
+# darajaga_oshirish(2,3)
+
+
+
+
+
+
+""" 2 """
+
+# def salomber(ism):
+#     """kiritilgan ismga qoshimcha matn yozib chiqaruvchi function"""
+
+#     print(f"Salom {ism.title()}! Qalaysiz?")   
+# salomber("bobur")
+
+
+
+
+
+
+# """ 3 """
+
+# def ishorani_aniqlash(son):
+#     """Kiritilgan sonni musbat, manfiy yoki nolga teng ekanini aniqlovchi function"""
+
+#     if son > 0:
+#         print(f"{son} musbat son")
+#     elif son < 0:
+#         print(f"{son} manfiy son")
+#     else:
+#         print(f"{son} nolga teng")
+
+# ishorani_aniqlash(-5)
+
+
+
+
+
+"""4"""
+
+# def mashina_taklif_qilish(narx):
+#     """Mijozning puliga qarab unga yetadigan moshinalar tavfsiya qilish function"""
+# print("""sizda qancha miqdorda pul bor?
+#       men sizning pulingizga mos mashina taklif qilaman""")
+# pul = int(input("pul miqdorini kiriting: "))
+
+
+# if pul <= 20:
+#     print(f"{ism.title()} sizga mos mashina: Matiz,Tico, Jiguli")
+# elif pul > 20 and pul <= 50:
+#     print(f"{ism.title()} sizga mos mashina: Nexia, Damas, Labo")
+
+
+
+"""5""" 
+
+# def orta_arifmetik(*sonlar):
+#     """Istalgancha sonlarni qabul qilib, ularning o'rta arifmetigini qaytaruvchi function"""
+#     if len(sonlar) == 0:
+#         print("Hech qanday son kiritilmadi")
+#     else:
+#         yigindi = sum(sonlar)
+#         o'rta_arifmetik = yigindi / len(sonlar)
+#         print(f"Kiritilgan sonlar o'rta arifmetigi: {o'rta_arifmetik}")
+# orta_arifmetik(1,2,3,4,5)
+
+
+
+
+
+"""6""" 
+
+# def orta_geometrik(*sonlar):
+#     """Istalgancha sonlarni qabul qilib, ularning o'rta geometrikini qaytaruvchi function"""
+#     if len(sonlar) == 0:
+#         print("Hech qanday son kiritilmadi")
+#     else:
+#         mahsulot = 1
+#         for son in sonlar:
+#             mahsulot *= son
+#         orta_geometrik = mahsulot ** (1 / len(sonlar))
+#         print(f"Kiritilgan sonlar o'rta geometrigi: {o'rta_geometrik}")
+# orta_geometrik(1,2,3,4,5)
+
+
+""""""
+
+
+
+# import math
+
+# print(math.pow(2,3))
+
+
+import function 
+
+# print(function.darajaga_oshirish(2,3))
+# print(function.salomber("bobur"))
+# print(function.mashina_taklif_qilish(30))
+
+# print("Add 5 + 3 =", function.add(5, 3))
+# print("Factorial of 5 =", function.factorial(5))
+# print("Is 17 prime?", function.is_prime(17))
+# print("Fibonacci 10 =", function.fibonacci(10))
+# print("Multiplication table of 7:", function.multiplication_table(7))
+# print("Circle area r=5:", function.circle_area(5))
+# print("Triangle type 3,4,5:", function.triangle_type(3, 4, 5))
+# print("Password check 'mypassword':", function.password_check("mypassword"))
+# print("Reverse number 12345:", function.reverse_number(12345))
+# print("Median of [3,1,4,2,5]:", function.median([3,1,4,2,5]))
+
+
