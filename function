@@ -1,0 +1,452 @@
+
+
+""" 1 """
+
+def darajaga_oshirish(a,b):
+    """istalgan a sonning b inchi darajasini hisoblash funksiyasi"""
+
+    print(f"{a} ning {b} inchi darajasi: {a ** b}")
+# darajaga_oshirish(2,3)
+
+
+
+
+
+
+
+
+
+""" 2 """
+
+def salomber(ism):
+    """kiritilgan ismga qoshimcha matn yozib chiqaruvchi function"""
+
+    print(f"Salom {ism.title()}! Qalaysiz?")   
+# salomber("bobur")
+
+
+
+
+
+
+
+
+""" 3 """
+
+def ishorani_aniqlash(son):
+    """Kiritilgan sonni musbat, manfiy yoki nolga teng ekanini aniqlovchi function"""
+
+    if son > 0:
+        print(f"{son} musbat son")
+    elif son < 0:
+        print(f"{son} manfiy son")
+    else:
+        print(f"{son} nolga teng")
+
+# ishorani_aniqlash(-5)
+
+
+
+
+
+
+
+"""4"""
+
+def mashina_taklif_qilish(narx):
+    """Mijozning puliga qarab unga yetadigan moshinalar tavfsiya qilish function"""
+
+    ism = input("ismingizni_kiriting...:")
+    print(f"sizning {narx} pulingizga mos mashinalar mana shular...")
+    # pul = int(input("pul miqdorini kiriting: "))  
+    if narx <= 20:
+        print(f"{ism.title()} sizga mos mashina: Matiz,Tico, Jiguli")
+    elif narx > 20 and narx <= 50:
+        print(f"{ism.title()} sizga mos mashina: Nexia, Damas, Labo")
+
+
+
+
+
+
+"""5""" 
+
+def orta_arifmetik(*sonlar):
+    """Istalgancha sonlarni qabul qilib, ularning o'rta arifmetigini qaytaruvchi function"""
+    if len(sonlar) == 0:
+        print("Hech qanday son kiritilmadi")
+    else:
+        yigindi = sum(sonlar)
+        orta_arifmetik = yigindi / len(sonlar)
+        print(f"Kiritilgan sonlar o'rta arifmetigi: {orta_arifmetik}")
+# orta_arifmetik(1,2,3,4,5)
+
+
+
+import math
+
+# 🔢 1–10: Arifmetik amallar
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b == 0:
+        return "Error: Division by zero"
+    return a / b
+
+def square(n):
+    return n ** 2
+
+def cube(n):
+    return n ** 3
+
+def average(a, b, c):
+    return (a + b + c) / 3
+
+def circle_area(r):
+    return math.pi * r ** 2
+
+def max_of_two(a, b):
+    return max(a, b)
+
+def min_of_three(a, b, c):
+    return min(a, b, c)
+
+
+# 🔎 11–18: Shart operatorlari
+def is_even(n):
+    return n % 2 == 0
+
+def is_positive(n):
+    return n > 0
+
+def grade(score):
+    if score >= 90:
+        return "A"
+    elif score >= 80:
+        return "B"
+    elif score >= 70:
+        return "C"
+    elif score >= 60:
+        return "D"
+    else:
+        return "F"
+
+def largest_of_three(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
+        return b
+    else:
+        return c
+
+def is_divisible(a, b):
+    if b == 0:
+        return False
+    return a % b == 0
+
+def triangle_type(a, b, c):
+    if a == b == c:
+        return "Equilateral"
+    elif a == b or a == c or b == c:
+        return "Isosceles"
+    else:
+        return "Scalene"
+
+def password_check(password):
+    return len(password) >= 8
+
+def calc(a, b, operator):
+    if operator == '+':
+        return a + b
+    elif operator == '-':
+        return a - b
+    elif operator == '*':
+        return a * b
+    elif operator == '/':
+        if b == 0:
+            return "Error: Division by zero"
+        return a / b
+    else:
+        return "Invalid operator"
+
+
+# 🔁 19–24: While sikli
+def sum_to_n(n):
+    total = 0
+    i = 1
+    while i <= n:
+        total += i
+        i += 1
+    return total
+
+def factorial(n):
+    result = 1
+    i = 1
+    while i <= n:
+        result *= i
+        i += 1
+    return result
+
+def count_digits(n):
+    return len(str(abs(n)))
+
+def reverse_number(n):
+    reversed_n = 0
+    negative = n < 0
+    n = abs(n)
+    while n != 0:
+        reversed_n = reversed_n * 10 + n % 10
+        n //= 10
+    return -reversed_n if negative else reversed_n
+
+def sum_of_digits(n):
+    n = abs(n)
+    total = 0
+    while n != 0:
+        total += n % 10
+        n //= 10
+    return total
+
+def multiplication_table(n):
+    table = []
+    i = 1
+    while i <= 10:
+        table.append(f"{n} x {i} = {n*i}")
+        i += 1
+    return table
+
+
+# 📋 25–30: Ro‘yxatlar bilan ishlash
+def list_sum(numbers):
+    return sum(numbers)
+
+def list_max(numbers):
+    return max(numbers)
+
+def list_min(numbers):
+    return min(numbers)
+
+def count_even(numbers):
+    return len([x for x in numbers if x % 2 == 0])
+
+def reverse_list(numbers):
+    return numbers[::-1]
+
+def find_element(numbers, x):
+    return x in numbers
+
+
+# ➕ 31–60: Qo‘shimcha foydali funksiyalar
+def gcd(a, b):
+    while b:
+        a, b = b, a % b
+    return a
+
+def lcm(a, b):
+    return abs(a*b) // gcd(a, b)
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    for i in range(2, int(math.sqrt(n)) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+def prime_factors(n):
+    factors = []
+    i = 2
+    while i <= n:
+        if n % i == 0:
+            factors.append(i)
+            n //= i
+        else:
+            i += 1
+    return factors
+
+def fibonacci(n):
+    if n <= 0:
+        return []
+    sequence = [0, 1]
+    while len(sequence) < n:
+        sequence.append(sequence[-1] + sequence[-2])
+    return sequence[:n]
+
+def power(a, b):
+    return a ** b
+
+def sum_list_squares(numbers):
+    return sum(x**2 for x in numbers)
+
+def sum_list_cubes(numbers):
+    return sum(x**3 for x in numbers)
+
+def remove_duplicates(numbers):
+    return list(set(numbers))
+
+def median(numbers):
+    numbers_sorted = sorted(numbers)
+    n = len(numbers_sorted)
+    if n % 2 == 0:
+        return (numbers_sorted[n//2 - 1] + numbers_sorted[n//2]) / 2
+    else:
+        return numbers_sorted[n//2]
+
+def mode(numbers):
+    from collections import Counter
+    counts = Counter(numbers)
+    max_count = max(counts.values())
+    return [k for k, v in counts.items() if v == max_count]
+
+def is_palindrome(n):
+    s = str(n)
+    return s == s[::-1]
+
+def area_rectangle(a, b):
+    return a * b
+
+def area_triangle(a, b, c):
+    s = (a+b+c)/2
+    return math.sqrt(s*(s-a)*(s-b)*(s-c))
+
+def area_square(a):
+    return a**2
+
+def perimeter_rectangle(a, b):
+    return 2*(a+b)
+
+def perimeter_square(a):
+    return 4*a
+
+def perimeter_triangle(a, b, c):
+    return a + b + c
+
+# ➕ 61–90: Qo‘shimcha 30 ta funksiyalar
+
+# 61–65: Raqamlar bilan ishlash
+def digit_sum_even(n):
+    return sum(int(d) for d in str(abs(n)) if int(d) % 2 == 0)
+
+def digit_sum_odd(n):
+    return sum(int(d) for d in str(abs(n)) if int(d) % 2 != 0)
+
+def reverse_digits_list(n):
+    return [int(d) for d in str(abs(n))[::-1]]
+
+def count_odd_digits(n):
+    return len([d for d in str(abs(n)) if int(d) % 2 != 0])
+
+def is_armstrong(n):
+    digits = [int(d) for d in str(n)]
+    return sum(d**len(digits) for d in digits) == n
+
+# 66–70: Ro‘yxatlar bilan ishlash
+def list_product(numbers):
+    result = 1
+    for x in numbers:
+        result *= x
+    return result
+
+def list_average(numbers):
+    return sum(numbers)/len(numbers) if numbers else 0
+
+def list_range(numbers):
+    return max(numbers) - min(numbers) if numbers else 0
+
+def list_count_occurrences(numbers, x):
+    return numbers.count(x)
+
+def flatten_list(list_of_lists):
+    return [item for sublist in list_of_lists for item in sublist]
+
+# 71–75: Matematika va algebra
+def is_perfect(n):
+    return n == sum(i for i in range(1, n) if n % i == 0)
+
+def sum_of_squares_n(n):
+    return sum(i**2 for i in range(1, n+1))
+
+def sum_of_cubes_n(n):
+    return sum(i**3 for i in range(1, n+1))
+
+def consecutive_sum(a, b):
+    return sum(range(a, b+1))
+
+def is_square(n):
+    return int(math.sqrt(n))**2 == n
+
+# 76–80: Trigonometriya va geometrik funksiyalar
+def deg_to_rad(deg):
+    return math.radians(deg)
+
+def rad_to_deg(rad):
+    return math.degrees(rad)
+
+def sin_deg(deg):
+    return math.sin(math.radians(deg))
+
+def cos_deg(deg):
+    return math.cos(math.radians(deg))
+
+def tan_deg(deg):
+    return math.tan(math.radians(deg))
+
+# 81–85: String operatsiyalari
+def is_palindrome_string(s):
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]
+
+def count_vowels(s):
+    return sum(1 for c in s.lower() if c in "aeiou")
+
+def count_consonants(s):
+    return sum(1 for c in s.lower() if c.isalpha() and c not in "aeiou")
+
+def remove_spaces(s):
+    return s.replace(" ", "")
+
+def reverse_string(s):
+    return s[::-1]
+
+# 86–90: Miscellaneous / foydali funksiyalar
+def celsius_to_fahrenheit(c):
+    return (c * 9/5) + 32
+
+def fahrenheit_to_celsius(f):
+    return (f - 32) * 5/9
+
+def km_to_miles(km):
+    return km * 0.621371
+
+def miles_to_km(miles):
+    return miles / 0.621371
+
+def quadratic_roots(a, b, c):
+    disc = b**2 - 4*a*c
+    if disc < 0:
+        return "No real roots"
+    root1 = (-b + math.sqrt(disc)) / (2*a)
+    root2 = (-b - math.sqrt(disc)) / (2*a)
+    return root1, root2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
