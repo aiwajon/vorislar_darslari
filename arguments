@@ -1,0 +1,91 @@
+"""
+02.17.2026
+arguments
+"""
+
+# def daraja_oshirish(*son):
+#     print(f"{son} ** {son1} = {son ** son1}")
+# daraja_oshirish(2 , 3)
+
+""""""
+# def daraja_oshirish(son , son1):
+#     print(f"{son} ** {son1} = {son ** son1}")
+# daraja_oshirish(2 , 3)
+
+""""""
+# def malumotlar(ism, familiya, *ixtiyoriy):
+#     natija = ""
+#     ism = input("ismingizni kiriting? :")
+#     familya = input("familyangizni kiriting? :")
+
+#     for matn in ixtiyoriy:
+#         natija+=matn
+#     return f"{ism.title()} {familiya.title()} {natija}"
+
+# print(malumotlar('bobur' , 'jabborov' , 'boydoq'))
+
+""""""
+
+# def avto_info(kompaniya, model, **malumotlar):
+#     malumotlar['kompaniya'] = kompaniya
+#     malumotlar['model'] = model
+#     return malumotlar
+
+# mashina = avto_info('GM', 'Malibu', rang='qora', yil=2020, narh=35000)
+# print(mashina)
+
+""""""
+
+
+"""
+1)Istalgancha sonlarni qabul qilib, ularning ko'paytmasini qaytaruvchi funksiya
+yozing
+"""
+
+# def kopaytma(*son):
+#     natija = 1     
+#     for i in son:
+#         natija *= i
+#     return natija
+# print(kopaytma(2,3,4,5))
+ 
+"""2)Istalgancha sonlarni qabul qilib, ularning yig'indisini qaytaruvchi funksiya"""
+
+# def yigindi(*son):
+#     natija = 0
+#     for i in son:
+#         natija += i
+#     return natija
+# print(yigindi(2,3,4,5))
+
+
+"""3)Istalgancha sonlarni qabul qilib, ularning o'rtacha qiymatini qaytaruvchi funksiya"""
+# def o_arifmetik(*son):
+#     natija = 0
+#     for i in son:
+#         natija += i
+#     return natija/len(son)
+# print(o_arifmetik(2,3,4,5))
+
+
+""" avto maktabdagi mashinalar haqida ma'lumot saqlovchi funksiya yozing. Bu funksiya mashina nomi, modeli va ixtiyoriy"""
+
+# def avto_info(kompaniya, model, **malumotlar):
+#     malumotlar['kompaniya'] = kompaniya
+#     malumotlar['model'] = model
+#     return malumotlar
+
+# mashina = avto_info('GM', 'Malibu', rang='qora', yil=2020, narh=35000)
+# print(mashina)
+
+""""""
+
+
+
+
+
+
+
+
+
+
