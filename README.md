@@ -1,1 +1,1 @@
-# vorislar_darslari
+..# vorislar_darslari
