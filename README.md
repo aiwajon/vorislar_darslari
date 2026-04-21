@@ -1,1 +1,1 @@
-print..# vorislar_darslari
+print..
