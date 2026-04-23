@@ -1,1 +1,1 @@
-print..oo
+print..o
